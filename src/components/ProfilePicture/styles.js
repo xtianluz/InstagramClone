@@ -2,15 +2,22 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     container:{
-        padding: 10,
+        margin: 5,
+        height: 76,
+        width: 76,
+        borderRadius: 37,
+        borderWidth: 3,
+        borderColor: '#36d9d3',
+
     },
     image:{
-        height: 80,
-        width: 80,
-        borderRadius: 40,
+        
+        height: 70,
+        width: 70,
+        borderRadius: 35,
         borderWidth: 2,
-        borderColor: '#32a840',
-        borderWidth: 1,
+        borderColor: "#ffffff",
+        borderWidth: 2,
     }
 })
 

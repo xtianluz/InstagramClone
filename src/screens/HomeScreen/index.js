@@ -1,13 +1,12 @@
 import React from 'react';
 import {Text} from 'react-native';
-import ProfilePicture from '../../components/ProfilePicture';
+import Stories from '../../components/Stories';
 
 
 const HomeScreen = () => {
   return (
     <>
-    <Text>Hello World</Text>
-    <ProfilePicture />       
+    <Stories />   
     </>         
   );
 };
