@@ -5,7 +5,7 @@ import styles from "./styles";
 
 const data = [
     {
-        imageUri: 'https://upload.wikimedia.org/wikipedia/commons/7/76/PapuaNewGuineanandson.jpg',
+        imageUri: 'https://upload.wikimedia.org/wikipedia/commons/d/d2/Donald_Trump_August_19%2C_2015_%28cropped%29.jpg',
         name: 'Lukas',
     },
     {
