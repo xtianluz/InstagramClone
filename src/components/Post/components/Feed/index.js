@@ -51,6 +51,7 @@ const Feed = () => {
     <FlatList
             data={data}
             renderItem={({item}) => <Post post={item} />}
+            keyExtractor={() => Math.random()}
             ListHeaderComponent={Stories}
         />
     
