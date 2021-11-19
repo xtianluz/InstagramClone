@@ -1,11 +1,14 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
+
+
 
 const DiscoveryScreen = () => {
+
   return (
-    <>   
+    <View>
     <Text>Discovery Screen</Text>
-    </>         
+    </View>
   );
 };
 

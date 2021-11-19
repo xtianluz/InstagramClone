@@ -17,11 +17,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-
-import FoundationIcon from 'react-native-vector-icons/Foundation';
 import Evilicon from 'react-native-vector-icons/EvilIcons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-
+import HomeIcon from './assets/HomeIcon4.svg';
+import HomeIcon2 from './assets/HomeIcon5.svg';
 
 const Tab = createBottomTabNavigator();
 
@@ -31,7 +30,7 @@ const HomeStackScreen = () => {
   return (
     <HomeStack.Navigator>
       <HomeStack.Screen 
-      name="Home" 
+      name="Home1" 
       component={HomeScreen}
       options={{
           title: 'Instagram',
@@ -49,6 +48,7 @@ const HomeStackScreen = () => {
   );
 }
 
+{/* <FoundationIcon name={'home'} size={size} color={color} /> */}
 
 const App = () => {
   return (
@@ -59,7 +59,10 @@ const App = () => {
             tabBarIcon: ({ focused, color, size }) => {
   
               if (route.name === 'Home') {
-                return <FoundationIcon name={'home'} size={size} color={color} />
+                if(focused){
+                  return <HomeIcon2 width={20} height={20} color={color} />
+                }
+                return <HomeIcon width={20} height={20} color={color} />
               } else if (route.name === 'Discovery') {
                 return <Evilicon name={'search'} size={size} color={color} />
               } else if (route.name === 'Post') {
